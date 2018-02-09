@@ -25,6 +25,18 @@ const masterKegList = [
     brand: 'Barly Brown\'s Beer',
     price: 6.00,
     abv: '8.5%'
+  },
+  {
+    name: 'Optimist',
+    brand: 'Fort George',
+    price: 5.00,
+    abv: '5.5%'
+  },
+  {
+    name: 'Coconut Porter',
+    brand: 'Maui Brewing',
+    price: 7.00,
+    abv: '5.7%'
   }
 ];
 
