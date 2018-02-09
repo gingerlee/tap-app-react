@@ -1,21 +1,16 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
+import Home from '../containers/Home';
 
 function App(){
   return (
     <Switch>
-      <Route exact path='/' component={Default} />
+      <Route exact path='/' component={Home} />
       <Route component={Error404} />
     </Switch>
   );
 }
 
-//delete the following component definition before use
-function Default(){
-  return(
-    <h1>Default Component/App/Router Works!</h1>
-  );
-}
 
 export default App;
