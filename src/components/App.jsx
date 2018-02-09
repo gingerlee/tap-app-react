@@ -6,11 +6,21 @@ import Admin from '../containers/Admin';
 
 function App(){
   return (
-    <Switch>
-      <Route exact path='/' component={Home} />
-      <Route exact path='/admin' component={Admin} />
-      <Route component={Error404} />
-    </Switch>
+    <div>
+      <style global jsx>{`
+      html, body, h1, h2, h3, h4, p, ul, li {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+    `}</style>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/admin' component={Admin} />
+        <Route component={Error404} />
+      </Switch>
+    </div>
   );
 }
 

@@ -7,6 +7,7 @@ function Admin() {
   return(
     <div>
       <Hero
+        heroTitle={'Admin Portal'}
         heroImage={adminBeer}/>
       <Nav/>
     </div>

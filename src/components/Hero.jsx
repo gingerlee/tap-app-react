@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Hero(props) {
   return (
     <div className='hero'>
-      <h1>Hero Works</h1>
+      <h1>{props.heroTitle}</h1>
       <style jsx>{`
         color: white;
         height: 500px;
@@ -18,7 +18,8 @@ function Hero(props) {
 }
 
 Hero.propTypes = {
-  heroImage: PropTypes.string
+  heroImage: PropTypes.string,
+  heroTitle: PropTypes.string
 };
 
 export default Hero;

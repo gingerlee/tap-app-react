@@ -7,6 +7,7 @@ function Home(){
   return(
     <div>
       <Hero
+        heroTitle={'Tap That App'}
         heroImage={homeBeer}/>
       <Nav/>
     </div>
