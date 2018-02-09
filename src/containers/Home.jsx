@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Nav from '../components/Nav';
-import beer from '../assets/images/beer.jpg';
+import beer from '../assets/images/home-beer.jpg';
 
 function Home(){
   return(
