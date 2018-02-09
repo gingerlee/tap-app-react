@@ -1,5 +1,12 @@
 # React Tap App
-A react app that shows available taps around Portland. 
+A react app that shows available taps around Portland.
 
 ## Component Tree
 ![Component Tree](src/assets/images/component-tree.JPG)
+
+## Description
+Add in thoughts about developing in Angular vs React
+
+### Notes
+*Issues*
+*Questions*
