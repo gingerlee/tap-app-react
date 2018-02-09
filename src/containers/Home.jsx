@@ -12,6 +12,7 @@ function Home(){
         heroImage={homeBeer}/>
       <Nav/>
       <KegList/>
+      
     </div>
   );
 }

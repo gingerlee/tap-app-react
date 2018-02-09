@@ -31,15 +31,30 @@ const masterKegList = [
 function KegList() {
   return (
     <div>
-      <h1>Daily Taps</h1>
-      {masterKegList.map((keg, index) =>
-        <KegItem
-          name={keg.name}
-          brand={keg.brand}
-          price={keg.price}
-          abv={keg.abv}
-          key={index}/>
-      )}
+      <h1 className='header'>Daily Taps</h1>
+      <div className='cards'>
+        {masterKegList.map((keg, index) =>
+          <KegItem
+            name={keg.name}
+            brand={keg.brand}
+            price={keg.price}
+            abv={keg.abv}
+            key={index}/>
+        )}
+      </div>
+      <style jsx>{`
+          .header {
+            text-align: center;
+
+          }
+          .cards {
+          display: grid;
+          grid-gap: 30px;
+          grid-template-columns: repeat(3, 1fr);
+          maxWidth: '1200px',
+          margin: 'auto'
+        }
+      `}</style>
     </div>
   );
 }
