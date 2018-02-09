@@ -18,7 +18,7 @@ function Hero(props) {
 }
 
 Hero.propTypes = {
-  heroImage: Proptypes.string
+  heroImage: PropTypes.string
 };
 
 export default Hero;

@@ -1,13 +1,13 @@
 import React from 'react';
-import Hero from '../components/Hero';
 import Nav from '../components/Nav';
-import beer from '../assets/images/home-beer.jpg';
+import Hero from '../components/Hero';
+import homeBeer from '../assets/images/home-beer.jpg';
 
 function Home(){
   return(
     <div>
       <Hero
-        heroImage={beer}/>
+        heroImage={homeBeer}/>
       <Nav/>
     </div>
   );
