@@ -28,6 +28,9 @@ function Admin() {
           .intro {
             margin: 3em;
           }
+          h3{
+            margin-bottom: 30px;
+          }
 
             `}</style>
     </div>
