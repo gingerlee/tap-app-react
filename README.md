@@ -37,8 +37,8 @@ I'm excited to work on state next and add in some interactivity.
 
 
 ### Notes
-*Issues*
+**Issues**
 I found it hard to organize my styling. I think that I can clean some of this up by making another component. I think that the intro section for each page should be it's own component since the styling should match and then I would only have to write it once.
 
-*Questions*
-I would love to talk about my components and how I can better organize them for scalability. 
+**Questions**
+I would love to talk about my components and how I can better organize them for scalability.
