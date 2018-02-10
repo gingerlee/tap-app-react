@@ -43,7 +43,10 @@ const masterKegList = [
 function KegList() {
   return (
     <div>
-      <h1 className='header'>Daily Taps</h1>
+      <div className='intro'>
+        <h3 className='header'>Tap List</h3>
+        <p className='flow-text center'>A curated list of taps for you that we suggest you get your hands on. Keep checking back for updates on our daily suggestions. </p>
+      </div>
       <div className='cards'>
         {masterKegList.map((keg, index) =>
           <KegItem
@@ -55,16 +58,18 @@ function KegList() {
         )}
       </div>
       <style jsx>{`
+          .intro {
+            margin: 3em;
+          }
           .header {
             text-align: center;
-
+            margin-bottom: 30px;
           }
           .cards {
           display: grid;
           grid-gap: 30px;
           grid-template-columns: repeat(3, 1fr);
-          maxWidth: '1200px',
-          margin: 'auto'
+          margin: 0 3em;
         }
       `}</style>
     </div>

@@ -1,7 +1,8 @@
 import React from 'react';
-import Nav from '../components/Nav';
+
 import Hero from '../components/Hero';
 import adminBeer from '../assets/images/admin-beer.jpg';
+import {Button, Icon} from 'react-materialize';
 
 function Admin() {
   return(
@@ -9,7 +10,26 @@ function Admin() {
       <Hero
         heroTitle={'Admin Portal'}
         heroImage={adminBeer}/>
-      <Nav/>
+
+      <div className='intro center'>
+        <h3 className='header'>Edit/Add Taps</h3>
+        <p className='flow-text'>Use the buttons below to update and add taps to the taplist. </p>
+      </div>
+
+      <Button waves='light'>
+        Edit Kegs
+        <Icon right>thumb_up</Icon>
+      </Button>
+      <Button waves='light'>
+        Add Keg
+        <Icon right>thumb_up</Icon>
+      </Button>
+      <style jsx>{`
+          .intro {
+            margin: 3em;
+          }
+
+            `}</style>
     </div>
   );
 }
