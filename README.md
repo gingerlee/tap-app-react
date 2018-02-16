@@ -25,6 +25,7 @@ Navigate to http://localhost:8080/ to view site.
 
 ## Component Tree
 Updated to include state:
+
 ![Component Tree](src/assets/images/component-tree.jpg)
 
 
