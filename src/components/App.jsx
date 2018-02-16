@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
-import Home from './components/Home';
-import Admin from './components/Admin';
+import Home from '../components/Home';
+import Admin from '../components/Admin';
 import PropTypes from 'prop-types';
 
 class App extends React.Component {
@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList = [
+      masterKegList: [
         {
           name: 'GingaNinja',
           brand: 'Two Towns Cider',
@@ -52,24 +52,22 @@ class App extends React.Component {
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
   }
 
-
   handleAddingNewKegToList(newKeg) {
     const newMasterKegList = this.state.masterKegList.slice();
     newMasterKegList.push(newKeg);
     this.setState({masterKegList: newMasterKegList});
   }
 
-  render (){
+  render(){
     return (
       <div>
         <style global jsx>{`
-      html, body, h1, h2, h3, h4, p, ul, li {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-
-      }
-    `}</style>
+          html, body, h1, h2, h3, h4, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        `}</style>
         <Switch>
           <Route exact path='/' render={()=><Home kegList={this.state.masterKegList} />} />
           <Route exact path='/admin' render={()=><Admin onNewKegCreation={this.handleAddingNewKegToList} />}  />

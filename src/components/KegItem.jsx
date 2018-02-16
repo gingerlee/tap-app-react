@@ -9,13 +9,9 @@ function KegItem(props) {
       <p>Price: ${props.price}</p>
       <p>ABV: {props.abv}</p>
       <style jsx>{`
-          .card {
-            padding: 15px;
-            
-          }
-          p {
-
-          }
+        .card {
+          padding: 15px;
+        }
       `}</style>
     </div>
   );

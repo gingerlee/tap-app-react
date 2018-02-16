@@ -7,7 +7,7 @@ function KegList(props) {
     <div>
       <div className='intro'>
         <h3 className='header'>Tap List</h3>
-        <p className='flow-text center'>A curated list of taps for you that we suggest you get your hands on. Keep checking back for updates on our daily suggestions. </p>
+        <p className='flow-text center'>A curated list of taps for you that we suggest you get your hands on. Please checking back for updates on our daily suggestions.</p>
       </div>
       <div className='cards'>
         {props.kegList.map((keg, index) =>
