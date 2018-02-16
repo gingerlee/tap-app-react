@@ -30,8 +30,8 @@ function Admin(props) {
         <h3 className='header'>Add Keg</h3>
         <p className='flow-text'>Use the form below to add kegs to the taplist. </p>
       </div>
-      <div className='card'>
-        <form>
+      <div className='card center'>
+        <form onSubmit={handleNewKegFormSubmission}>
           <input
             type='text'
             id='name'
@@ -66,7 +66,7 @@ function Admin(props) {
             margin-bottom: 30px;
           }
           .card {
-            margin: 0 15vw 15vh 15vh;
+            margin: 0 30vw 15vh 30vw;
             padding: 30px;
           }
 
