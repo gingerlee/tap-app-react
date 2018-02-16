@@ -9,8 +9,25 @@ function Home(props){
     <div>
       <Hero
         heroImage={homeBeer}/>
-      <KegList kegList={props.kegList}/>
-
+      <div className='intro'>
+        <h3 className='header'>Tap List</h3>
+        <p className='flow-text center'>A curated list of taps for you that we suggest you get your hands on. Please checking back for updates on our daily suggestions.</p>
+      </div>
+      <div className='keg-list'>
+        <KegList kegList={props.kegList}/>
+      </div>
+      <style jsx>{`
+        .intro {
+          margin: 3em;
+        }
+        .header {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+          .keg-list  {
+            margin: 0 15vw 20vh 15vw;
+          }
+      `}</style>
     </div>
   );
 }

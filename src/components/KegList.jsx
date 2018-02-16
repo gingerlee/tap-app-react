@@ -5,10 +5,7 @@ import PropTypes from 'prop-types';
 function KegList(props) {
   return (
     <div>
-      <div className='intro'>
-        <h3 className='header'>Tap List</h3>
-        <p className='flow-text center'>A curated list of taps for you that we suggest you get your hands on. Please checking back for updates on our daily suggestions.</p>
-      </div>
+
       <div className='cards'>
         {props.kegList.map((keg, index) =>
           <KegItem
@@ -20,13 +17,6 @@ function KegList(props) {
         )}
       </div>
       <style jsx>{`
-          .intro {
-            margin: 3em;
-          }
-          .header {
-            text-align: center;
-            margin-bottom: 30px;
-          }
           .cards {
           display: grid;
           grid-gap: 30px;
