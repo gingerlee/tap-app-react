@@ -10,7 +10,7 @@ function Hero(props) {
       <style jsx>{`
         div {
           color: white;
-          height: 500px;
+          height: 400px;
           width: 100%;
           background-position: center;
           background-size: cover;

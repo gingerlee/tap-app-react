@@ -1,5 +1,5 @@
 # React Tap App
-February 9, 2018 -- Ginger Lee Kretschmer
+February 16, 2018 -- Ginger Lee Kretschmer
 
 ## Description
 This react app is a recreation of a [previous Angular project](https://github.com/gingerlee/tap-app) using React. It is an app for a bar to display and edit current taps.
@@ -16,8 +16,16 @@ Install NPM packages.
 $ npm install
 ```
 
+Serve Site
+```
+$ npm run start
+```
+
+Navigate to http://localhost:8080/ to view site.
+
 ## Component Tree
-![Component Tree](src/assets/images/component-tree.JPG)
+Updated to include state:
+![Component Tree](src/assets/images/component-tree.jpg)
 
 
 ### Angular vs. React

@@ -43,12 +43,12 @@ function Admin(props) {
             placeholder='Brand'
             ref={(input) => {_brand = input;}} />
           <input
-            type='text'
+            type='number'
             id='price'
             placeholder='Price'
             ref={(input) => {_price = input;}} />
           <input
-            type='text'
+            type='number'
             id='abv'
             placeholder='ABV'
             ref={(input) => {_abv = input;}} />

@@ -7,7 +7,7 @@ function KegItem(props) {
       <h4>{props.name}</h4>
       <h5>{props.brand}</h5>
       <p>Price: ${props.price}</p>
-      <p>ABV: {props.abv}</p>
+      <p>ABV: {props.abv}%</p>
       <style jsx>{`
         .card {
           padding: 15px;
@@ -21,7 +21,7 @@ KegItem.propTypes = {
   name: PropTypes.string,
   brand: PropTypes.string,
   price: PropTypes.number,
-  abv: PropTypes.string
+  abv: PropTypes.number
 };
 
 export default KegItem;
